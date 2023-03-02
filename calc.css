@@ -1,0 +1,194 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 200;
+
+}
+
+span{
+    font-size: 12px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#base{
+    width: 290px;
+    height: 455px;
+}
+
+#display{
+    width: 290px;
+    height: 80px;
+    margin-bottom: 10px;
+    background: #3F7C85;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#display-text{
+    display: block;
+    text-align: right;
+    font-size: 32px;
+    padding-right: 10px;
+}
+
+#info{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#list-1{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#list-1 .bnt-c{
+    width: 140px;
+    height: 65px;
+    margin: 0px;
+    margin-right: 10px;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #FF5F5D;
+}
+
+#list-1 .bnt-mult{
+    width: 65px;
+    height: 65px;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #747E7E;
+}
+
+#list-1 .bnt-div{
+    width: 65px;
+    height: 65px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #747E7E;
+}
+
+#list-2{
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+#list-2 .bnt-7,.bnt-8, .bnt-9{
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #747E7E;
+}
+
+#list-2 .bnt-minus{
+    width: 65px;
+    height: 65px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #747E7E;
+}
+
+#list-3{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#list-3 .bnt-4, .bnt-5, .bnt-6 {
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #747E7E;
+}
+
+#list-3 .bnt-dot{
+    width: 65px;
+    height: 65px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #747E7E;
+}
+
+#list-4 {
+    display: flex;
+    margin-bottom: 10px;
+
+}
+
+#list-4 .bnt-1, .bnt-2, .bnt-3{
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #747E7E;
+}
+
+#list-4 .bnt-plus{
+    width: 65px;
+    height: 65px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #3F7C85;
+}
+
+#list-5{
+    display: flex;
+}
+
+#list-5 .bnt-0{
+    width: 215px;
+    height: 65px;
+    margin-right: 10px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #747E7E;
+}
+
+#list-5 .bnt-equal{
+    width: 65px;
+    height: 65px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #3F7C85;
+}
+
