@@ -63,6 +63,10 @@ body{
     background: #FF5F5D;
 }
 
+#list-1 .bnt-c:hover{
+    background: #f84c49;
+}
+
 #list-1 .bnt-mult{
     width: 65px;
     height: 65px;
@@ -75,6 +79,10 @@ body{
     background: #747E7E;
 }
 
+#list-1 .bnt-mult:hover{
+    background: #656b6b;
+}
+
 #list-1 .bnt-div{
     width: 65px;
     height: 65px;
@@ -84,6 +92,10 @@ body{
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: #747E7E;
+}
+
+#list-1 .bnt-div:hover{
+    background: #656b6b;
 }
 
 #list-2{
@@ -103,6 +115,10 @@ body{
     background: #747E7E;
 }
 
+#list-2 .bnt-7:hover,.bnt-8:hover, .bnt-9:hover{
+    background: #656b6b;
+}
+
 #list-2 .bnt-minus{
     width: 65px;
     height: 65px;
@@ -111,6 +127,10 @@ body{
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: #747E7E;
+}
+
+#list-2 .bnt-minus:hover{
+    background: #656b6b;
 }
 
 #list-3{
@@ -129,6 +149,10 @@ body{
     background: #747E7E;
 }
 
+#list-3 .bnt-4:hover, .bnt-5:hover, .bnt-6:hover{
+    background: #656b6b;
+}
+
 #list-3 .bnt-dot{
     width: 65px;
     height: 65px;
@@ -137,6 +161,10 @@ body{
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: #747E7E;
+}
+
+#list-3 .bnt-dot:hover{
+    background: #656b6b;
 }
 
 #list-4 {
@@ -156,6 +184,10 @@ body{
     background: #747E7E;
 }
 
+#list-4 .bnt-1:hover, .bnt-2:hover, .bnt-3:hover{
+    background: #656b6b;
+}
+
 #list-4 .bnt-plus{
     width: 65px;
     height: 65px;
@@ -165,6 +197,10 @@ body{
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: #3F7C85;
+}
+
+#list-4 .bnt-plus:hover{
+    background: #0f606d;
 }
 
 #list-5{
@@ -182,6 +218,10 @@ body{
     background: #747E7E;
 }
 
+#list-5 .bnt-0:hover{
+    background: #656b6b;
+}
+
 #list-5 .bnt-equal{
     width: 65px;
     height: 65px;
@@ -190,5 +230,9 @@ body{
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: #3F7C85;
+}
+
+#list-5 .bnt-equal:hover{
+    background: #0f606d;
 }
 
