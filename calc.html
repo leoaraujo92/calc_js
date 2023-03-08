@@ -10,19 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="showHour()">
     <div id="base">
-        Aqui é a Base
-        
             <div id="display">
                 <div id="info">
-                    <span>12:22</span>
-                    <span>02/03/2023</span>
+                    <span id="hour">12:22</span>
+                    <span id="date">02/03/2023</span>
                 </div>
-                    <span id="display-text">0</span>
+                    <span id="display-text">547</span>
             </div>
         <div id="list-1">
-            <input type="button" value="C" class="bnt-c">
+            <input type="button" value="C" class="bnt-c" onclick="apagar()">
             <input type="button" value="*" class="bnt-mult">
             <input type="button" value="/" class="bnt-div">
         </div>
