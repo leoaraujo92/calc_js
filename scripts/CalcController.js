@@ -14,14 +14,20 @@ class CalcController {
     //Inicializando o código
     initialize(){
 
+        
         // Definindo um intervalo
         //Arrow Function recurso para criação de função
-
         // Hora e data sendo atualiza a cada 1000 milisegundos que é igual a 1 segundo
+
+        //A FUNÇÃO setDisplayDateTime está antes função setInterval para não ter delay quanto carregar na tela
+        this.setDisplayDateTime()
+
         let interval = setInterval(()=>{
-            this.displayDate = this.currentDate.toLocaleDateString(this._locale)
-            this.displayTime = this.currentDate.toLocaleTimeString(this._locale)
+
+            this.setDisplayDateTime()
+
         },1000 )
+        //FIM setInterval data e hora
 
 
         //setTimeOut determina quanto tempo esperar para que o evento deva ocorrer
@@ -35,8 +41,21 @@ class CalcController {
         
         */
 
+
+
     }
     // FIM DA FUNÇÃO INITIALIZE
+
+            //CRIANDO METODO PARA RETIRAR O ATRASO DO CARREGAMENTO DA DATA E HORA NO DISPLAY
+            setDisplayDateTime(){
+            
+                this.displayDate = this.currentDate.toLocaleDateString(this._locale, {
+                    day: "2-digit",
+                    month: "long",
+                    year: "numeric"
+                })
+                this.displayTime = this.currentDate.toLocaleTimeString(this._locale)
+            }
 
     //CONFIGURAÇÃO DA HORA
     get displayTime(){
