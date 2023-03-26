@@ -10,15 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300&display=swap" rel="stylesheet">
 </head>
-<body onload="showHour()">
+<body">
     
     <div id="base">
             <div id="display">
                 <div id="info">
-                    <span id="hour">12:22</span>
-                    <span id="date">02/03/2023</span>
+                    <span id="hour"></span>
+                    <span id="date"></span>
                 </div>
-                    <span id="display-text">547</span>
+                    <span id="display-text"></span>
             </div>
         <div id="list-1">
             <input type="button" value="C" class="bnt-c" onclick="apagar()">
@@ -55,6 +55,7 @@
 
     </div>
 
-    <script src="calc.js"></script>
+    <script src="scripts/CalcController.js"></script>
+    <script src="scripts/calc.js"></script>
 </body>
 </html>
