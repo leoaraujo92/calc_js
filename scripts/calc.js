@@ -1,4 +1,4 @@
-let calc = new CalcController()
+window.calc = new CalcController()
 
 var bntC = document.querySelector('.bnt-c')
 var textDisplay = document.querySelector("#display-text")
