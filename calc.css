@@ -40,7 +40,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #383838;
+    background-color: rgb(92, 89, 89);
 }
 
 #base{

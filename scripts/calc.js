@@ -1,4 +1,4 @@
-window.calc = new CalcController()
+window.calc = new CalcController() // CHAMANDO CONSUTRUCTOR DA CLASSE CalcController
 
 var bntC = document.querySelector('.bnt-c')
 var textDisplay = document.querySelector("#display-text")
@@ -10,11 +10,6 @@ var month = date.getMonth()
 var year = date.getFullYear()
 
 
-
-function apagar(){
-    
-    textDisplay.innerHTML = 0
-}
 
 
 function showHour(){
@@ -60,7 +55,7 @@ function showHour(){
             month = "Dez"
             break
         }
-    displayHour.innerHTML = `${hour}:${min}`
+    displayTime.innerHTML = `${hour}:${min}`
     displayDate.innerHTML = `${day}/${month}/${year}`
     
 }
