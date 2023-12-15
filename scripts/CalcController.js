@@ -168,7 +168,7 @@ class CalcController {
 
             this.addEventListenerAll(btn, "click drag", e => {
 
-                console.log(btn.className.replace("bnt-",""))
+                let textBtn = btn.className.replace("bnt-","")
 
                 // CRIANDO UM METODO PARA FAZER AS OPERAÇÕES DA CALCULADORA
                 this.execBtn(textBtn)
