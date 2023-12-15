@@ -4,6 +4,7 @@ class CalcController {
         // O CONSTRUCTOR INICIALIZA O CÓDIGO AUTOMATICAMENTE
         // Atributos: Public, Protected, Private
         //this._displayCalc = 0 -> PRIVATE PORCAUSA DO UNDER-LINE
+        this._operation = []
         this._locale = 'pt-BR'
         this._displayCalcEl = document.querySelector("#display-text")
         this._dateEl = document.querySelector("#date")
@@ -85,6 +86,74 @@ class CalcController {
     }
     /**-----------------------------------------------FIM LISTA DE EVENTOS-----------------------------------------*/
 
+    /**METODO QUE LIMPA TUDO O QUE ESTA NO DISPLAY */
+    clearAll(){
+
+        this.displayCalc = '0'
+    }
+
+    /**METODO QUE ADCIONA UMA OPERAÇÃO */
+    addOperation(value){
+
+        this._operation.push(value)
+
+        console.log(this._operation)
+    }
+
+    /**METODO QUE MOSTRA ERRO NA TELA */
+    setError(){
+        this.displayCalc = "ERRO"
+    }
+
+    /**ESTE METODO FAZ AS OPERAÇÕES NA CALCULADORA */
+
+        execBtn(value){
+            
+            switch (value){
+
+                case 'c':
+                    this.clearAll()
+                    break
+
+                case 'div':
+                    
+                    break
+
+                case 'minus':
+                    
+                    break
+
+                case 'dot':
+                    
+                    break
+
+                case 'plus':
+                    
+                    break
+
+                case 'equal':
+                    
+                    break
+
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    this.addOperation(parseInt(value))
+                    break
+
+                default:
+                    this.setError()
+                break
+            }
+        }
+
     /**
      * initButtonsEvents usa o addEventListernerAll para criar multiplos eventos
      * Que neste caso é o evento de click e drag
@@ -100,6 +169,10 @@ class CalcController {
             this.addEventListenerAll(btn, "click drag", e => {
 
                 console.log(btn.className.replace("bnt-",""))
+
+                // CRIANDO UM METODO PARA FAZER AS OPERAÇÕES DA CALCULADORA
+                this.execBtn(textBtn)
+
             })
 
     /**---------------------------------------------MUDANDO O CURSOR DO MOUSE VIA JS---------------------------------- */
