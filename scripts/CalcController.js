@@ -92,18 +92,65 @@ class CalcController {
         this.displayCalc = '0'
     }
 
+    /**METODO QUE RETORNA O ULTIMO NUMERO DO ARRAY */
+    getLastOperation(){
+
+        return this._operation[this._operation.length-1]
+    }
+
+    /**METODO QUE SUBSTITUI ULTIMO ARRAY */
+    setLastOperation(value){
+
+        this._operation[this._operation.length - 1] = value
+    }
+
+    /**METODO QUE RETORNA O ULTIMO NUMERO DO ARRAY */
+    isOperator(value){
+
+         return (['+', '.', '*', '%', '/'].indexOf(value) > -1)
+        
+    }
+
     /**METODO QUE ADCIONA UMA OPERAÇÃO */
     addOperation(value){
+        
+        //VERIFICA SE O VALOR OBTIDO PELO METODO getLastOperation É UM NÚMERO
+        if(isNaN(this.getLastOperation())){
 
-        this._operation.push(value)
+            //STRING
+            if(this.isOperator(value)){
+
+                //TROCA O OPERADOR
+                this._setLastOperation(value)
+
+            } else if(isNaN(value)) {
+
+                //OUTRA COISA
+                console.log(value)
+
+            } else {
+
+                this._operation.push(value)
+            }
+
+        }else {
+            //NUMBER
+            let newValue = this.getLastOperation().toString() + value.toString()
+            this.setLastOperation(parseInt(newValue))
+        }
+
+        //this._operation.push(value)
 
         console.log(this._operation)
     }
 
     /**METODO QUE MOSTRA ERRO NA TELA */
     setError(){
+
         this.displayCalc = "ERRO"
     }
+
+
 
     /**ESTE METODO FAZ AS OPERAÇÕES NA CALCULADORA */
 
@@ -116,23 +163,27 @@ class CalcController {
                     break
 
                 case 'div':
-                    
+                    this.addOperation('/')
                     break
 
                 case 'minus':
-                    
+                    this.addOperation('-')
                     break
 
                 case 'dot':
-                    
+                    this.addOperation('.')
                     break
 
                 case 'plus':
-                    
+                    this.addOperation('+')
                     break
 
                 case 'equal':
                     
+                    break
+
+                case 'mult':
+                    this.addOperation('*')
                     break
 
                 case '0':
@@ -194,7 +245,7 @@ class CalcController {
             
                 this.displayDate = this.currentDate.toLocaleDateString(this._locale, {
                     day: "2-digit",
-                    month: "short",
+                    month: "long",
                     year: "numeric"
                 })
                 this.displayTime = this.currentDate.toLocaleTimeString(this._locale)

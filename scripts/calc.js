@@ -11,7 +11,7 @@ var year = date.getFullYear()
 
 
 
-
+/*
 function showHour(){
    
     switch(month){
@@ -59,3 +59,4 @@ function showHour(){
     displayDate.innerHTML = `${day}/${month}/${year}`
     
 }
+*/
